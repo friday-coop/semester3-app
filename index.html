@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular ToDo Example</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  </head>
+  <body ng-controller="ToDo">
+    <div class="jumbotron">
+		<h1>Hello, world!</h1>
+		<p> LUKE IS A LIE!!!! </p>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+			<div class="panel panel-\">
+				  <div class="panel-heading">
+						<h3 class="panel-title">ToDo App</h3>
+				  </div>
+				  <div class="panel-body">
+				  	<ul class="list-group" ng-repeat="item in items">
+				  		<li class="list-group-item">
+							<input ng-model="item.done" type="checkbox"> 
+								{{ item.text }} ({{ item.done }})
+				  		</li>
+				  	</ul>
+				  </div>
+			</div>
+
+			</div>
+			<div class="col-md-4">
+				<div class="well">
+					Total Items: {{ items.length }}
+				</div>
+				<form action="" method="POST" role="form">
+					<legend>ToDo Form</legend>
+
+					<div class="form-group">
+						<label for="">ToDo Task</label>
+						<input ng-model="newItem" type="text" class="form-control" placeholder="Input field">
+					</div>
+				
+					<button ng-click="add(newItem)" type="submit" class="btn btn-primary">Add a New Item</button>
+				</form>
+			</div>			
+			<div class="col-md-2">DEAD CATS</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12"> <hr> </div>
+			
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+			bs3-table
+</div>
+
+			<div class="col-md-8">NO MO CATZ!</div>			
+			<div class="col-md-2">I am the GIT MASTER!</div>
+=======
+			<div class="col-md-8">Heyo!pizza is chill braaah!!</div>
+			<div class="col-md-2"></div>
+>>>>>>> 9ba65b66121db216d279e2d2702c7460919c3cd7
+		</div>
+	</div>
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) (included in angular) -->
+    <script src="js/angular.min.js"> </script>
+    <script src="script.js"> </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
